@@ -14,8 +14,16 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   moonSize= map(drum, 0, 100, 50, 100)
   bgCol = map(0, 100, 100, 255)
 
+fill(62, 30, 66)
+rect(0, 350, 1589,)//sky
+
+fill(86, 42, 92)
+rect(0, 250, 1589,);//sky pt2
+
 fill(72, 50, 72)
-rect(0, 300, 1589,); //Sea
+rect(0, 450, 1589,); //Sea
+
+triangle(95, 500, 108, 70, 536, 500);
 
 fill(216, 191, 216)
 circle(700,moonSize,moonY)//Moon
