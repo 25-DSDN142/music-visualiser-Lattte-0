@@ -6,6 +6,8 @@ let moonSize;
 let moonY =60
 let firstRun = true;
 let myImage;
+let gloriaTwo;
+let gloriaThree;
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
@@ -13,6 +15,8 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   if (firstRun){
 
   myImage =loadImage('gloriaSprite.png')
+  gloriaTwo =loadImage('intermediateGloria.PNG')
+  
   firstRun = false;
 
 }
