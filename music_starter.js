@@ -5,25 +5,29 @@ let bgcol
 let moonSize;
 let moonY =60
 let firstRun = true;
-let myImage;
-let gloriaTwo;
-let gloriaThree;
+//let myImage;
+//let gloriaTwo;
+let Gloria;
+let gloriaWish;
+let gloriaY = 450
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   
   if (firstRun){
 
-  myImage =loadImage('gloriaSprite.png')
-  gloriaTwo =loadImage('intermediateGloria.PNG')
-  
+  //myImage =loadImage('gloriaSprite.png')-other Gloria images
+ // gloriaTwo =loadImage('intermediateGloria.PNG')-extra image
+  Gloria= loadImage('wishingGloria.PNG');
+
   firstRun = false;
 
 }
   
-  frameRate(5);
+  frameRate(10);
 
   background(66,68,113,bgcol)//bgcol goes here
+  gloriaWish= map(vocal, 0,380,380,300)
   moonSize= map(drum, 0, 100, 50, 100)
   bgCol = map(0, 100, 100, 255)
 
@@ -42,9 +46,7 @@ fill(216, 191, 216)
 circle(700,moonSize,moonY)//Moon
 
 
-
-
-image(myImage, 400, 400);
+image(Gloria, gloriaWish, gloriaY, width/10, height/8 );
 
 
 //fill(66, 135, 245) //blue
