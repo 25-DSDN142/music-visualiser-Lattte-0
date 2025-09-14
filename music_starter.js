@@ -13,6 +13,7 @@ let miniorOne;
 let pokemonS;
 let miniorTwo;
 let miniorThree;
+let grassPatch;
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
@@ -25,6 +26,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   pokemonS= loadImage('pkmSprites.png')
   miniorTwo= loadImage('minior B.png')
   miniorThree= loadImage('Minior PI.png')
+  grassPatch= loadImage('UntitledArtwork1.png')
   firstRun = false;
 
 }
@@ -57,6 +59,7 @@ circle(700,moonSize,moonY) // Moon shadow
 image(miniorOne,500,20)// Purple Minior
 image(miniorTwo,350,50) //Blue Minior
 image(miniorThree, 470,100) //Pink Minior
+image(grassPatch,0,50)
 image(Blanket,350,450) //Picnic Blanket and grass
 image(pokemonS, gloriaWish, 480) // The pokemon with Gloria (Cleffa and Hatenna)
 image(Gloria, gloriaWish, gloriaY, width/9, height/6 ); //Gloria code
@@ -74,10 +77,10 @@ image(Gloria, gloriaWish, gloriaY, width/9, height/6 ); //Gloria code
 
   }
 
-  if(sunY >1000) {
-sunY=0
+  //if(sunY >1000) {
+//sunY=0
    
-  }
+ // }
  
 
 //}
