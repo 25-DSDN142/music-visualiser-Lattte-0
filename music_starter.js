@@ -26,7 +26,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   pokemonS= loadImage('pkmSprites.png')
   miniorTwo= loadImage('minior B.png')
   miniorThree= loadImage('Minior PI.png')
-  grassPatch= loadImage('UntitledArtwork1.png')
+  grassPatch= loadImage('UntitledArtwork2.png')
   firstRun = false;
 
 }
