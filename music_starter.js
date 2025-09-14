@@ -1,25 +1,30 @@
 
-let sunY =100
-let sunSize;
+//let starY =100
+//let starSize;
 let bgcol
 let moonSize;
 let moonY =60
 let firstRun = true;
-//let myImage;
-//let gloriaTwo;
 let Gloria;
 let gloriaWish;
-let gloriaY = 450
+let gloriaY = 400
+let Blanket;
+let miniorOne;
+let pokemonS;
+let miniorTwo;
+let miniorThree;
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   
   if (firstRun){
 
-  //myImage =loadImage('gloriaSprite.png')-other Gloria images
- // gloriaTwo =loadImage('intermediateGloria.PNG')-extra image
   Gloria= loadImage('wishingGloria.PNG');
-
+  Blanket= loadImage('Picnic.png');
+  miniorOne= loadImage('minior PU.png')
+  pokemonS= loadImage('pkmSprites.png')
+  miniorTwo= loadImage('minior B.png')
+  miniorThree= loadImage('Minior PI.png')
   firstRun = false;
 
 }
@@ -27,8 +32,9 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   frameRate(10);
 
   background(66,68,113,bgcol)//bgcol goes here
-  gloriaWish= map(vocal, 0,380,380,300)
+  gloriaWish= map(vocal, 0,350,420,320)
   moonSize= map(drum, 0, 100, 50, 100)
+  //starSize= map(drum, 0, 100, 50, 100)
   bgCol = map(0, 100, 100, 255)
 
 fill(104,106,138)
@@ -44,9 +50,16 @@ rect(0, 450, 1589,); //grass patch
 
 fill(216, 191, 216)
 circle(700,moonSize,moonY)//Moon
+fill(230, 209, 230)
+circle(700,moonSize,moonY) // Moon shadow
 
 
-image(Gloria, gloriaWish, gloriaY, width/10, height/8 );
+image(miniorOne,500,20)// Purple Minior
+image(miniorTwo,350,50) //Blue Minior
+image(miniorThree, 470,100) //Pink Minior
+image(Blanket,350,450) //Picnic Blanket and grass
+image(pokemonS, gloriaWish, 480) // The pokemon with Gloria (Cleffa and Hatenna)
+image(Gloria, gloriaWish, gloriaY, width/9, height/6 ); //Gloria code
 
 
 //fill(66, 135, 245) //blue
